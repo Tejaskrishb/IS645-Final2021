@@ -1,0 +1,33 @@
+<%- include("_header") -%>
+
+<br>
+<h3>Calculate Sum of a Series</h3>
+<form id="form">
+    <table>
+        <tr>
+            <td><label>Enter Starting Number</label>:</td>
+            <td><input type="number" name="startno" id="startno" required /></td>
+            <td>(Required)</td>
+        </tr>
+        <tr>
+            <td><label>Enter Ending Number</label>:</td>
+            <td><input type="number" name="endno" id="endno" required /></td>
+            <td>(Required)</td>
+        </tr>
+        <tr>
+            <td><label>Enter Increment</label>:</td>
+            <td><input type="number" name="increment" id="increment" required /></td>
+            <td>(Required)</td>
+        </tr>
+        <tr>
+            <td span="2">
+                <br><input type="submit" value="Calculate Sum" class="btn btn-primary" /><br>
+            </td>
+        </tr>
+    </table>
+</form>
+<div id="output">
+</div>
+
+<script src="sumseries.js"></script>
+<%- include("_footer") -%>
